@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <RootNamespace>mathnet_filtering</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="Filtering\Filtering-Net35.csproj" />
+    <None Include="Filtering\Filtering-Net40-Signed.csproj" />
+    <None Include="Filtering\Filtering-Portable259.csproj" />
+    <None Include="Filtering\Filtering.csproj" />
+    <None Include="Kalman\Kalman-Net35.csproj" />
+    <None Include="Kalman\Kalman-Net40-Signed.csproj" />
+    <None Include="Kalman\Kalman-Portable259.csproj" />
+    <None Include="Kalman\Kalman.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MathNet.Numerics" Version="4.6.0" />
+  </ItemGroup>
+
+</Project>

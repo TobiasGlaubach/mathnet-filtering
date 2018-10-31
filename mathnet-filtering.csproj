@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <RootNamespace>mathnet_filtering</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="src\FilteringUnitTests\**" />
+    <Compile Remove="src\KalmanUnitTests\**" />
+    <Compile Remove="src\Kalman\Properties\**" />
+    <EmbeddedResource Remove="src\FilteringUnitTests\**" />
+    <EmbeddedResource Remove="src\KalmanUnitTests\**" />
+    <EmbeddedResource Remove="src\Kalman\Properties\**" />
+    <None Remove="src\FilteringUnitTests\**" />
+    <None Remove="src\KalmanUnitTests\**" />
+    <None Remove="src\Kalman\Properties\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MathNet.Numerics" Version="4.6.0" />
+  </ItemGroup>
+
+</Project>
